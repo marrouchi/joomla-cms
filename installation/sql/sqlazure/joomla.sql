@@ -917,6 +917,8 @@ SELECT 403, 'plg_content_contact', 'plugin', 'contact', 'content', 0, 1, 1, 0, '
 UNION ALL
 SELECT 404, 'plg_content_emailcloak', 'plugin', 'emailcloak', 'content', 0, 1, 1, 0, '', '{"mode":"1"}', '', '', 0, '1900-01-01 00:00:00', 1, 0
 UNION ALL
+SELECT 405, 'plg_content_menu', 'plugin', 'menu', 'content', 0, 1, 1, 0, '', '', '', '', 0, '1900-01-01 00:00:00', 1, 0
+UNION ALL
 SELECT 406, 'plg_content_loadmodule', 'plugin', 'loadmodule', 'content', 0, 1, 1, 0, '', '{"style":"xhtml"}', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
 SELECT 407, 'plg_content_pagebreak', 'plugin', 'pagebreak', 'content', 0, 1, 1, 0, '', '{"title":"1","multipage_toc":"1","showall":"1"}', '', '', 0, '1900-01-01 00:00:00', 4, 0

@@ -129,6 +129,8 @@
 		<filename>en-GB.plg_content_joomla.sys.ini</filename>
 		<filename>en-GB.plg_content_loadmodule.ini</filename>
 		<filename>en-GB.plg_content_loadmodule.sys.ini</filename>
+                <filename>en-GB.plg_content_menu.ini</filename>
+		<filename>en-GB.plg_content_menu.sys.ini</filename>
 		<filename>en-GB.plg_content_pagebreak.ini</filename>
 		<filename>en-GB.plg_content_pagebreak.sys.ini</filename>
 		<filename>en-GB.plg_content_pagenavigation.ini</filename>
