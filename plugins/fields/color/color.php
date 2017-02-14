@@ -18,4 +18,32 @@ JLoader::import('components.com_fields.libraries.fieldsplugin', JPATH_ADMINISTRA
  */
 class PlgFieldsColor extends FieldsPlugin
 {
+	/**
+	 * Change the default value field to a color field
+	 *
+	 * @param   JForm  $form  The form to be altered.
+	 * @param   mixed  $data  The associated data for the form.
+	 *
+	 * @return  boolean
+	 *
+	 * @since   __DEPLOY_VERSION__
+	 */
+	public function onContentPrepareForm($form, $data)
+	{
+		if (!($form instanceof JForm))
+		{
+			$this->_subject->setError('JERROR_NOT_A_FORM');
+
+			return false;
+		}
+
+		$type = (is_object($data)) ? $data->type : $data['type'];
+
+		if ($form->getName() == 'com_fields.fieldcom_content.article' &&  $type == 'color')
+		{
+			$form->setFieldAttribute('default_value', 'type', 'color');
+		}
+
+		return true;
+	}
 }
